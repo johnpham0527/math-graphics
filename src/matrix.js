@@ -3,7 +3,7 @@ class Matrix {
         this.rows = rows;
         this.cols = cols;
         this.data = [];
-        this.string = '';
+        this.lastcol = cols;
 
         for (let r = 0; r < rows; r++) {
             this.data.push(new Array(cols));
