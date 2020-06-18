@@ -1,5 +1,3 @@
-'use strict';
-
 class Matrix {
     constructor(rows, cols) {
         this.rows = rows;
@@ -13,8 +11,6 @@ class Matrix {
             }
         }
 
-        //console.log(`The Matrix's data is ${this.data}`);
+        console.log(`The Matrix's data is ${this.data}`);
     }
 }
-
-export default Matrix;
