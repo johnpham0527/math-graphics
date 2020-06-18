@@ -27,6 +27,22 @@ class Matrix {
         }
 
         return output;
+    }
 
+    makeIdentity() {
+        if (this.rows !== this.cols) {
+            console.log('Cannot generate identity matrix: rows and cols are not equal')
+            return;
+        }
+
+        for (let r = 0; r < this.rows; r++) {
+            for (let c = 0; c < this.cols; c++) {
+                this.data[r][c] = 0;
+            }
+        }
+
+        for (let r = 0; r < this.rows; r++) {
+            this.data[r][r] = 1;
+        }
     }
 }
